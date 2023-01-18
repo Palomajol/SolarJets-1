@@ -26,6 +26,13 @@ cd extracts/;
 panoptes_aggregation extract ../box-the-jets-classifications.csv\
 	../configs/Extractor_config_workflow_19650_V4.52.yaml -o box_the_jets
 
+
+###Added by Paloma 
+# remove the later classifications
+python3 ../scripts/trim_classifications.py question_extractor_box_the_jets.csv
+python3 ../scripts/trim_classifications.py shape_extractor_rotateRectangle_box_the_jets.csv
+python3 ../scripts/trim_classifications.py point_extractor_by_frame_box_the_jets.csv
+
 # squash the frames
 cd ..;
 python3 scripts/normalize_subject_size.py
@@ -51,5 +58,5 @@ panoptes_aggregation reduce ../extracts/question_extractor_box_the_jets.csv\
     ../configs/Reducer_config_workflow_19650_V4.52_question_extractor.yaml -o box_the_jets
 
 
-cd ..
-python3 scripts/make_T3_csvfiles.py;
+#cd ..
+#python3 scripts/make_T3_csvfiles.py;
