@@ -29,9 +29,9 @@ panoptes_aggregation extract ../box-the-jets-classifications.csv\
 
 ###Added by Paloma 
 # remove the later classifications
-python3 ../scripts/trim_classifications.py question_extractor_box_the_jets.csv
-python3 ../scripts/trim_classifications.py shape_extractor_rotateRectangle_box_the_jets.csv
-python3 ../scripts/trim_classifications.py point_extractor_by_frame_box_the_jets.csv
+#python3 ../scripts/trim_classifications.py question_extractor_box_the_jets.csv
+#python3 ../scripts/trim_classifications.py shape_extractor_rotateRectangle_box_the_jets.csv
+#python3 ../scripts/trim_classifications.py point_extractor_by_frame_box_the_jets.csv
 
 # squash the frames
 cd ..;
