@@ -544,7 +544,7 @@ class Aggregator:
 
             ax.plot(clust[:, 0], clust[:, 1], '-', linewidth=0.85, color='white')
 
-        ax.axis('off')
+        #ax.axis('off')
 
         ax.set_xlim((0, img.shape[1]))
         ax.set_ylim((img.shape[0], 0))

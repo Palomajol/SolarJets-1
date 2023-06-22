@@ -167,14 +167,10 @@ def json_import_list(input_file):
             print(e)
             cluster_obj.std_maxH = np.array([np.nan, np.nan])
 
-<<<<<<< HEAD
         cluster_obj.Width= json_obj['width']['mean']
         cluster_obj.std_W= json_obj['width']['std']
         cluster_obj.Height= json_obj['height']['mean']
         cluster_obj.std_H= json_obj['height']['std']
-=======
-        cluster_obj.Width = json_obj['width']['mean']
-        cluster_obj.std_W = json_obj['width']['std']
 
         cluster_obj.sigma = json_obj['sigma']
 
@@ -185,7 +181,6 @@ def json_import_list(input_file):
 
         if 'flag' in json_obj:
             cluster_obj.flag = json_obj['flag']
->>>>>>> 25914d3da6c74d8354e3b2dacdb7736aaf446051
 
         clusters.append(cluster_obj)
 
