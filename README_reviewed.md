@@ -43,14 +43,16 @@ panoptes workflow download-classifications -g 21225 BoxTheJets/box-the-jets-clas
 If the workflow does not have to be generenated we can drop the -g in both these commands.
 ```bash 
 panoptes workflow download-classifications 25059 JetOrNot/jet-or-not-classifications.csv    
-
+```
+```bash
 panoptes workflow download-classifications 21225 BoxTheJets/box-the-jets-classifications.csv
 ```
 
 
 ```bash
 panoptes_aggregation config solar-jet-hunter-workflows.csv 25059
-
+```
+```bash
 panoptes_aggregation config solar-jet-hunter-workflows.csv 21225
 ```
 
