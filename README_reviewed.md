@@ -48,7 +48,7 @@ panoptes workflow download-classifications 25059 JetOrNot/jet-or-not-classificat
 panoptes workflow download-classifications 21225 BoxTheJets/box-the-jets-classifications.csv
 ```
 
-
+Now we make the extractor configs
 ```bash
 panoptes_aggregation config solar-jet-hunter-workflows.csv 25059
 ```
@@ -57,6 +57,9 @@ panoptes_aggregation config solar-jet-hunter-workflows.csv 21225
 ```
 
 25059 and 21225 are the workflow ID for Jet Or Not and Box The Jets respectively. This will generate for the 2 workflows both 3 files: the extractor config, one reducer configs and the task labels. Move these files into the `configs/` folder (create the directory if it doesn't exist).
+```bash
+mv *.yaml configs/
+```
 
 Now, to run the aggregation, call the `do_aggregration.sh` script:
 ```bash
